@@ -89,40 +89,12 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/data.js"></script>
-   <!--     <button id="fname" class="autocompare">Set fname</button> -->
-
+ 
 		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
 		<script>
 		var chart; // global
-		
-	
-			
-	
-     /*    $(document).ready(function() {
-			
-			$.get('FileName='+document.getElementById("FileName").value+'_HTTP', function(csv) {
-			    $('#container').highcharts({
-			        chart: {
-			        	type: 'column'
-			        },
-			        data: {
-			            csv: csv
-			        },
-			        title: {
-						text: 'Consumo Elettrico'
-					},
-					yAxis: {
-						title: {
-							text: 'Watt'
-						}
-					}
-			    });
-			});	
-		});
-		*/
 
-
-	</script>
+    	</script>
 		  
   <script>
 
@@ -166,7 +138,6 @@ function myFunction() {
 			    });
 			});	
    
- // document.getElementById("frmlog").submit();
 }
 </script>
   	<!-- 3. Add the container -->
@@ -182,7 +153,7 @@ function myFunction() {
       </fieldset>
 
 	  	  <form id="frmlog" action="filelog" method="GET">
-         FileName: <input type="text" id="FileName" name="FileName" value="160425.csv">
+         FileName: <input type="text" id="FileName" name="FileName" value=".csv">
      
   <input type="button" onclick="myFunction()" value="Elabora">
   
