@@ -1,5 +1,5 @@
 /*
- Fish and Kilowatt 1.0 Originale inviato al contest
+ Fish and Kilowatt 1.0
  
  Monitoraggio consumi elettrici 
 
