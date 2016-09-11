@@ -1,12 +1,14 @@
 /*
- Fish and Kilowatt 1.0 Originale inviato al contest
+ Fish and Kilowatt Versione 1.1 -> tolto la // vers 1.1      Serial.print(c); a riga 540, aggiunto un else a riga 599
  
  Monitoraggio consumi elettrici 
 
  grafici highcharts ( http://www.highcharts.com/ )   
  
- 30 Aprile 2016
- Mauro Segafredo freedoapp@gmail.com
+ created 30 April 2016
+ by Mauro Segafredo freedoapp@gmail.com
+
+
  
  */
 
@@ -535,7 +537,7 @@ if (  getDateTime()) {
         while (client.connected()) {
             if (client.available()) {   // client data available to read
                 char c = client.read(); // read 1 byte (character) from client
-                Serial.print(c);
+          // vers 1.1      Serial.print(c);
                 // limit the size of the stored received HTTP request
                 // buffer first part of HTTP request in HTTP_req array (string)
                 // leave last element in array as 0 to null terminate string (REQ_BUF_SZ - 1)
@@ -594,7 +596,7 @@ if (  getDateTime()) {
                           SendFile();
                       
                     }
-                    
+                    else     // Vers 1.1
                     if (StrContains(HTTP_req, "chfile")>0) {
                           SendHeaderOk();
                           SendHeaderhtml();
